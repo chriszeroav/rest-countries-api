@@ -1,9 +1,13 @@
-import { SearchCountry } from "@/components/home";
+import { Countries, FilterRegion, SearchCountry } from "@/components/home";
 
 export default function Home() {
   return (
     <div className="p-5">
-      <SearchCountry />
+      <div className="flex flex-col gap-5">
+        <SearchCountry />
+        <FilterRegion />
+      </div>
+      <Countries />
     </div>
   );
 }
